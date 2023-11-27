@@ -1,0 +1,28 @@
+@keyframes flippingCard {
+  0% {
+    transform: translateX(0) translateY(0) rotateY(0) translateZ(0);
+  }
+
+  80% {
+    transform: translateX(100%) translateY(-5.208vw) translateZ(5.208vw) rotateY(180deg);
+  }
+
+  100% {
+    transform: translateX(100%) translateY(-17.083vw) translateZ(0)  rotateY(180deg);
+  }
+}
+
+@include phones {
+  @keyframes flippingCard {
+
+    80% {
+      transform: translateX(100%) translateY(-100px) translateZ(100px) rotateY(180deg);
+    }
+
+    100% {
+      transform: translateX(100%) translateY(-218px) translateZ(0)  rotateY(180deg);
+      width: 118px;
+      height: 178px;
+    }
+  }
+}

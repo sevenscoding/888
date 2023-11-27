@@ -1,0 +1,19 @@
+@import './vars';
+
+@mixin desktop() {
+  @media screen and (max-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@mixin phones() {
+  @media screen and (max-width: $bp-phones) {
+    @content;
+  }
+}
+
+@mixin adaptive-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
